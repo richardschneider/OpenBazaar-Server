@@ -17,8 +17,8 @@ mkdir dist
     
     echo "32-bit..."
     
-    wget -q https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz 
-    tar xzf Python-2.7.11.tgz
+    wget -q https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz 
+    tar xzf Python-2.7.10.tgz
     sudo apt-get -qq -y install gcc-multilib g++-multilib
     CFLAGS=-m32 LDFLAGS=-m32 ./configure --prefix=/opt/Python2.7-32bits
     make
@@ -38,18 +38,7 @@ mkdir dist
     virt/bin/pip install -q setuptools==19.2
     virt/bin/pyinstaller -D -F .travis/openbazaard.linux32.spec
 
-    # echo "64-bit"
-    #
-    # mkdir dist/linux64
-    # cd dist/linux64
-    #
-    # echo "Set up virtualenv"
-    # virtualenv env
-    # . env/bin/activate
-    #
-    # echo "Install Python dependencies"
-    # pyinstaller -D -F ../../.travis/openbazaard.linux64.spec
-
+    
 #     ;;
 #
 #   "osx")
