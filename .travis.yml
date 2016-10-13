@@ -25,7 +25,8 @@ deploy:
     file:
       - dist/openbazaard-linux32
       - dist/openbazaard-linux64
-      - dist/openbazaard.exe
+      - dist/openbazaard-windows32.exe
+      - dist/openbazaard-windows64.exe
     skip_cleanup: true
     on:
       all_branches: true
