@@ -9,4 +9,5 @@ sudo chmod a+x dist/openbazaard-linux32
 sudo chmod 777 dist/openbazaard-linux64
 sudo chmod a+x dist/openbazaard-linux64
 ls -alg dist/openbazaard-linux64
-sudo chmod 777 dist/openbazaard.exe
+sudo chmod 777 dist/openbazaard-windows64.exe
+sudo chmod 777 dist/openbazaard-windows32.exe
