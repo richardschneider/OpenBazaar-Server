@@ -8,8 +8,6 @@ mkdir dist
 # case "$TRAVIS_OS_NAME" in
 #   "linux")
 
-   
-    cd OpenBazaar/
 
     echo "Building Linux Binaries...."
     sudo apt-get -qq update
