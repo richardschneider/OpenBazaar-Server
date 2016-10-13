@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo bash build-linux64.sh
-docker run -i -v "${PWD}:/OpenBazaar" toopher/ubuntu-i386:14.04 /bin/bash -c "linux32 --32bit i386 /OpenBazaar/build-linux32.sh"
+sudo docker run -i -v "${PWD}:/OpenBazaar" toopher/ubuntu-i386:14.04 /bin/bash -c "linux32 --32bit i386 /OpenBazaar/build-linux32.sh"
 sudo bash build-win.sh
 sudo bash build-win64.sh
 sudo chmod 777 dist/openbazaard-linux32
